@@ -88,3 +88,33 @@ print('Tiene: ', coche.cilindros, ' cilindros')
 
     #else:
      #   print('Felicidades tu vehiculo pronto sera fabricado')
+
+
+class Alumno:
+    def inicializar (self, nombre, nota):
+        self.nombre = nombre
+        self.nota = nota
+
+    def imprimir(self):
+        print('El nombre del alumno es: ', self.nombre)
+        print('La nota del alumno es: ', self.nota)
+
+    def resultado(self):
+        if self.nota < 5.0:
+            print('El alumno a reprobado')
+        else:
+            print('El alumno a aprobado')
+
+alumno1 = Alumno()
+alumno2 = Alumno()
+
+alumno1.inicializar(nombre=input('Introduce el nombre del alumno: '),
+                nota=float(input('Introduce la nota del alumno')))
+alumno2.inicializar(nombre=input('Introduce el nombre del alumno: '),
+                nota=float(input('Introduce la nota del alumno')))
+
+alumno1.imprimir()
+alumno1.resultado()
+
+alumno2.imprimir()
+alumno2.resultado()
